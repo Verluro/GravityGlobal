@@ -1,0 +1,100 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+
+body {
+	background-color: #F0F0F0;
+}
+
+.container {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.row {
+	width: 100%;
+	height: auto;
+}
+
+.col:nth-child(odd) {
+	background-image: url('../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1400.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.col:nth-child(even) { 
+	background-color: #FFF; 
+}
+
+.col-text {
+	padding: 86px 110px 86px 110px;
+}
+
+h1.m-title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 42px;
+	font-weight: bold;
+	color: #121212;
+}
+
+p.m-content {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #121212;
+	margin-top: 43px;
+}
+
+button.m-btn {
+	background: #E4C1AE 0% 0% no-repeat;	
+	border: none;
+	border-radius: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 10px 44px;
+	float: right;
+}
+
+button.m-btn:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 768px){
+
+
+	.col {
+		width: 100%;
+	}
+
+	.col:nth-child(odd) {
+		min-height: 203.5px;
+	}
+
+	.col-text {
+		padding: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.col:nth-child(odd) {
+		height: auto;
+		min-height: 300px;
+	}
+}
+
+@media (min-width:1200px) {
+
+
+	.row { 
+		width: 1140px; 
+		min-height: 407px; 
+	}
+
+	.col:nth-child(odd) {
+		min-height: 407px;
+	}
+}

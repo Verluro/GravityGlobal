@@ -1,0 +1,142 @@
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+@import "my_variables.scss";
+@import "my_mixins.scss";
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+
+* {
+	font-family: $font-family;
+}
+
+body {
+	background-color: $gray;
+}
+
+.container {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.row {
+	width: $w100;
+	height: auto;
+
+	@include large-up {
+		width: $row-width;
+		min-height: $min-height;
+	}
+}
+
+.col {
+	
+	&:nth-child(odd) {
+		background-image: $bg-image;
+		background-repeat: $bg-repeat;
+		background-size: $bg-size;
+
+		@include small-up {
+			min-height: $min-height/2;
+		}
+
+		@include medium-up {
+			height: auto;
+			min-height: $min-height - 107px;
+		}
+
+		@include large-up {
+			min-height: $min-height;
+		}
+
+	}
+
+	&:nth-child(even) {
+		background-color: $white;
+	}
+
+	&-text {
+		padding: $padding;
+
+		@include small-up {
+			padding: $sm-padding;
+		}
+	}
+
+	@include small-up {
+		width: $w100;
+	}
+}
+
+h1.m-title {
+	font-size: $h1-size;
+	font-weight: bold;
+	color: $black;
+}
+
+p.m-content {
+	font-size: $p-size;
+	font-weight: normal;
+	color: $black;
+	margin-top: $p-margin;
+}
+
+button.m-btn {
+	background-color: $mycolor;
+	border: none;
+	border-radius: $border-radius;
+	font-weight: bold;
+	color: $white;
+	padding: $btn-padding;
+	float: $btn-float;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
