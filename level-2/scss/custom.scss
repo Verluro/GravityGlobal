@@ -104,7 +104,6 @@ $sm-padding: 20px;
 $p-margin: 43px;
 $btn-padding: 10px 44px;
 
-$btn-float: right;
 
 @font-face {
 	font-family: 'Roboto';
@@ -196,7 +195,6 @@ button.m-btn {
 	font-weight: bold;
 	color: $white;
 	padding: $btn-padding;
-	float: $btn-float;
 
 	&:hover {
 		cursor: pointer;
