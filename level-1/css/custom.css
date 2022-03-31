@@ -29,7 +29,7 @@ body {
 }
 
 .col-text {
-	padding: 86px 110px 86px 110px;
+	padding: 86px 110px 69px 110px;
 }
 
 h1.m-title {
@@ -37,6 +37,7 @@ h1.m-title {
 	font-size: 42px;
 	font-weight: bold;
 	color: #121212;
+	line-height: 49px;
 }
 
 p.m-content {
@@ -45,6 +46,7 @@ p.m-content {
 	font-weight: normal;
 	color: #121212;
 	margin-top: 43px;
+	line-height: 26px;
 }
 
 button.m-btn {
